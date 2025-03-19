@@ -1,13 +1,8 @@
 # akahu.py - An OOP wrapper for Akahu
-An *unofficial* simple object oriented wrapper written in python for the Akahu open banking API. 
 
-# Getting Started
+An *unofficial* simple object oriented wrapper written in python for the Akahu open banking API.
 
-#### Installation
-
-No pip package yet, but you can download this repo and use it as you would any other package!
-
-#### A simple example
+# A simple example
 
 ```python
 from akahu import akahu
@@ -28,10 +23,6 @@ for account in accounts:
 transfer = chequing.make_transfer(account.id, 100)
 ```
 
-# Documentation
-
-Yet to come
-
 # Todo
 
 - 100% API coverage. Currently Akahu.py doesn't support everything available via the Akahu API.
@@ -39,7 +30,6 @@ Yet to come
 - Guardrails. Dealing with money programatically can be scary, implementing checks and balances is something that is certainly needed.
 - Async.
 
-# Contributing 
+# Contributing
 
 All contributions are appreciated. Just make sure to try and stick to the OOP approach and everything will be sweet as!
-
