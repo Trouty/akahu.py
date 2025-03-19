@@ -23,7 +23,6 @@ docs = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["akahu"]
 exclude = [
     "tests*", 
     "docs*"
