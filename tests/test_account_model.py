@@ -1,5 +1,7 @@
 from unittest import TestCase
+
 from akahu.models.account import Account
+from akahu.utils import Utils
 
 response = {
     "_id": "acc_id",
@@ -64,10 +66,19 @@ class TestAccountModel(TestCase):
         refreshed = self.account.refreshed
         response_refreshed = response["refreshed"]
 
-        self.assertEqual(refreshed.balance, response_refreshed["balance"])
-        self.assertEqual(refreshed.meta, response_refreshed["meta"])
-        self.assertEqual(refreshed.transactions, response_refreshed["transactions"])
-        self.assertEqual(refreshed.party, response_refreshed["party"])
+        self.assertEqual(
+            Utils.datetime_to_iso(refreshed.balance), response_refreshed["balance"]
+        )
+        self.assertEqual(
+            Utils.datetime_to_iso(refreshed.meta), response_refreshed["meta"]
+        )
+        self.assertEqual(
+            Utils.datetime_to_iso(refreshed.transactions),
+            response_refreshed["transactions"],
+        )
+        self.assertEqual(
+            Utils.datetime_to_iso(refreshed.party), response_refreshed["party"]
+        )
 
     def test_valid_account_balance_parameters(self):
         balance = self.account.balance
