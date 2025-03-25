@@ -2,6 +2,12 @@
 
 An *unofficial* simple object oriented wrapper written in python for the Akahu open banking API.
 
+# Installation
+
+```shell
+pip install akahu.py
+```
+
 # A simple example
 
 ```python

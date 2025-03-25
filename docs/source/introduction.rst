@@ -1,6 +1,10 @@
 Introduction
 ============
 
+Akahu is an amazing way for Kiwis to interact with their financial data programmatically. You can view everything related to 
+Akahu's API on their `docs page <https://developers.akahu.nz/docs/getting-started>`_ and all their other services and information
+on their `website <https://www.akahu.nz/>`_. Thanks to Akahu for your invaluable service in this modern era!
+
 Getting Your Tokens
 -------------------
 First you need to obtain an app and user token from Akahu. You can do this by heading to 
@@ -13,7 +17,13 @@ you have obtained these tokens you can move on to installing akahu.py
 
 Installation
 ------------
-Place holder
+
+To install akahu.py with pip run the following command:
+
+.. code-block:: 
+    :caption: installation
+
+    pip install akahu.py
 
 A Simple Example
 ----------------
