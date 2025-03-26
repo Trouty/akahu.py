@@ -29,6 +29,10 @@ for account in accounts:
 transfer = chequing.make_transfer(account.id, 100)
 ```
 
+# Documentation
+
+You can find the API reference and safety [here](https://akahupy.readthedocs.io/en/latest/introduction.html)
+
 # Todo
 
 - 100% API coverage. Currently Akahu.py doesn't support everything available via the Akahu API.
