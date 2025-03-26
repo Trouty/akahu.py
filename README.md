@@ -31,7 +31,7 @@ transfer = chequing.make_transfer(account.id, 100)
 
 # Documentation
 
-You can find the API reference and safety [here](https://akahupy.readthedocs.io/en/latest/introduction.html)
+You can find the API reference and safety precautions [here](https://akahupy.readthedocs.io/en/latest/introduction.html)
 
 # Todo
 
