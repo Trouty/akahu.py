@@ -18,6 +18,7 @@ class Connection:
     id : str
         The ID of the connection
     """
+
     def __init__(self, name: str, logo: str, _id: str) -> None:
         """Initializes a `Connection` object.
 
@@ -53,8 +54,9 @@ class Refreshed:
     transactions : datetime, optional
         The time when the transactions was last updated, by default None.
     """
+
     def __init__(
-        self, balance: str, meta: str, party: str, transactions: str = None
+        self, balance: str, meta: str, party: str = None, transactions: str = None
     ) -> None:
         """Initializes a `Refreshed` object.
 
@@ -71,8 +73,10 @@ class Refreshed:
         """
         self.balance: datetime = Utils.iso_to_datetime(balance)
         self.meta: str = Utils.iso_to_datetime(meta)
-        self.transactions: str = Utils.iso_to_datetime(transactions)
-        self.party: str = Utils.iso_to_datetime(party)
+        self.transactions: str = (
+            Utils.iso_to_datetime(transactions) if transactions else None
+        )
+        self.party: str = Utils.iso_to_datetime(party) if party else None
 
 
 class Balance:
@@ -91,6 +95,7 @@ class Balance:
     overdrawn : bool, optional
         Wether the account is overdrawn or not, by default None.
     """
+
     def __init__(
         self,
         current: float,
